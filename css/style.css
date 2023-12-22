@@ -53,6 +53,13 @@ a {
     font-size: 18px;
     color: #FFF;
     line-height: 22px;
+    transition: all 0.3s;
+    box-shadow: none;
+}
+
+.top_button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #9C0332;
 }
 
 .catalog {
@@ -91,3 +98,5 @@ a {
     padding-left: 10%;
     margin-top: -70px;
 }
+
+@import 'mobileVers';
