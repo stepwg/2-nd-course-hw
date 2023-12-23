@@ -53,6 +53,12 @@ console.log(user.age); //25
 console.log(user.isAdmin); //(true)
 
 
+user.city_of_residence = "Moscow";
+
+
+user.age = 30;
+
+
 
 let info = prompt("Какую инормацию хотите узнать о пользователе?");
 alert(user);
