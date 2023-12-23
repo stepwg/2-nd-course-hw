@@ -30,12 +30,12 @@ alert(a % b);
 
 
 let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
-num = num + 1;
-num = num - 1;
+num += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num += 1;
+num -= 1;
 alert(num);
 
 
@@ -53,13 +53,14 @@ console.log(user.age); //25
 console.log(user.isAdmin); //(true)
 
 
-user.city_of_residence = "Moscow";
+user['city of residence'] = "Moscow";
+console.log(user['city of residence']);
 
 
 user.age = 30;
 
 
-delete user.city_of_residence;
+delete user['city of residence'];
 
 
 
