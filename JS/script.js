@@ -46,7 +46,7 @@ alert(age);
 let user = {
     name: "Joe",
     age: 25,
-    isAdmin: ('true'),
+    isAdmin: true,
 }
 console.log(user.name); //'Joe'
 console.log(user.age); //25
@@ -59,6 +59,14 @@ user.city_of_residence = "Moscow";
 user.age = 30;
 
 
+delete user.city_of_residence;
+
+
 
 let info = prompt("Какую инормацию хотите узнать о пользователе?");
-alert(user);
+alert(user[info]);
+
+
+
+let yourName = prompt("Введите ваше имя");
+alert(`Привет,${yourName}!`);
