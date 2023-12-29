@@ -72,6 +72,7 @@ a {
   padding-bottom: 128px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
   row-gap: 60px;
 }
@@ -100,6 +101,84 @@ a {
   margin-top: -70px;
 }
 
+.seasons {
+  background-color: #000915;
+}
+
+.seasons_block {
+  display: flex;
+  padding-top: 234px;
+  padding-bottom: 234px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seasons_name {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  color: #FFF;
+  max-width: 700px;
+}
+
+.seasons_name-mob {
+  display: none;
+}
+
+.seasons_text {
+  color: #FFF;
+  font-family: "Montserrat";
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+  max-width: 580px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.seasons_logo1 {
+  width: 485px;
+}
+
+.seasons-mob {
+  display: none;
+}
+
+.words {
+  background-color: #000915;
+}
+
+.words_block {
+  display: flex;
+  padding-top: 234px;
+  padding-bottom: 234px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.words_logo1 {
+  width: 485px;
+}
+
+.words_name {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  color: #FFF;
+  max-width: 700px;
+}
+
+.words_text {
+  color: #FFF;
+  font-family: "Montserrat";
+  line-height: 1.5rem;
+  margin-bottom: 40px;
+  max-width: 580px;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
 @media (max-width: 425px) {
   .center {
     padding-left: 16px;
@@ -125,5 +204,62 @@ a {
   }
   .content_img {
     width: 343px;
+  }
+  .catalog_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .seasons_name {
+    display: none;
+  }
+  .seasons_name-mob {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    color: white;
+  }
+  .seasons_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .seasons_logo1 {
+    width: 343px;
+  }
+  .seasons_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 50px;
+  }
+  .seasons_text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+  }
+  .seasons2_name {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+    color: white;
+  }
+  .words {
+    display: none;
+  }
+  .seasons-mob {
+    display: block;
+    background-color: #000915;
   }
 }/*# sourceMappingURL=style.css.map */

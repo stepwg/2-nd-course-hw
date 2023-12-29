@@ -28,4 +28,71 @@
     .content_img {
         width: 343px;
     }
+
+    .catalog_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .seasons_name {
+        display: none;
+    }
+
+    .seasons_name-mob {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+        color: white;
+    }
+
+    .seasons_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .seasons_logo1 {
+        width: 343px;
+    }
+
+    .seasons_block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        gap: 50px;
+    }
+
+    .seasons_text {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        width: 343px;
+    }
+
+    .seasons2_name {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: center;
+        color: white;
+    }
+
+    .words {
+        display: none;
+    }
+
+    .seasons-mob {
+        display: block;
+        background-color: #000915;
+    }
 }

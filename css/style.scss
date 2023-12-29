@@ -72,6 +72,7 @@ a {
     padding-bottom: 128px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     row-gap: 60px;
 }
@@ -98,6 +99,84 @@ a {
     color: #FFF;
     padding-left: 10%;
     margin-top: -70px;
+}
+
+.seasons {
+    background-color: #000915;
+  }
+
+  .seasons_block {
+    display: flex;
+    padding-top: 234px;
+    padding-bottom: 234px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.seasons_name {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    color: #FFF;
+    max-width: 700px;
+}
+
+.seasons_name-mob {
+    display: none;
+}
+
+.seasons_text {
+    color: #FFF;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 580px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.seasons_logo1 {
+    width: 485px;
+}
+
+.seasons-mob {
+    display: none;
+}
+
+.words {
+    background-color: #000915;
+}
+
+.words_block {
+    display: flex;
+    padding-top: 234px;
+    padding-bottom: 234px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.words_logo1 {
+    width: 485px;
+}
+
+.words_name {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    color: #FFF;
+    max-width: 700px;
+}
+
+.words_text {
+    color: #FFF;
+    font-family: 'Montserrat';
+    line-height: 1.5rem;
+    margin-bottom: 40px;
+    max-width: 580px;
+    font-weight: 300;
+    padding-top: 20px;
 }
 
 @import 'mobileVers';
