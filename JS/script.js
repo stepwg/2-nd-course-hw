@@ -1,3 +1,5 @@
+/*
+
 // hw 3
 
 let place = prompt("Введите пароль");
@@ -163,3 +165,5 @@ let firstFriday = 5;
 for(let i = firstFriday; i <= 31; i += 7) {
     console.log("сегодня пятница, ${i} -е число. необходимо подготовить отчет");
 }
+
+*/
