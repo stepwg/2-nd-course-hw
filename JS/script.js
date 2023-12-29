@@ -74,7 +74,7 @@ alert(`Привет,${yourName}!`);
 
 
 
-let place = string(prompt("Введите пароль"));
+let place = prompt("Введите пароль");
 let password = 'пароль';
 if (place === password) {
     alert("Пароль введен верно");
@@ -121,16 +121,24 @@ alert(Number(q) + Number(w));
 
 let monthNumber = Number(prompt("Введите номер месяца"));
 switch(monthNumber) {
-    case 3-5:
+    case 3:
+    case 4:
+    case 5:
         alert("Весна");
         break;
-    case 6-8:
+    case 6:
+    case 7:
+    case 8:
         alert("Лето");
         break;
-    case 9-11:
+    case 9:
+    case 10:
+    case 11:
         alert("Осень");
         break;
-    case 12,1,2:
+    case 12:
+    case 1:
+    case 2:
         alert("Зима");
         break;
 }
@@ -151,7 +159,7 @@ else {
 
 
 let clientOS = 1;
-if (clientOS == 1) {
+if (clientOS === 1) {
     console.log("Для андроид");
 }
 console.log("Для ИОС");
