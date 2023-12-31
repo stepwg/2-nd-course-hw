@@ -69,6 +69,8 @@ switch(monthNumber) {
     case 2:
         alert("Зима");
         break;
+    default:
+        alert("нет такого месяца");
 }
 
 
