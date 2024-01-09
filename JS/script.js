@@ -30,7 +30,7 @@ let obj = {
 };
 
 for(let key in obj) {
-    console.log("${key} - зарплата $(obj[key]) долларов");
+    console.log(`${key} - зарплата $(obj[key]) долларов`);
 }
 
 
@@ -51,6 +51,6 @@ console.log(numb);
 
 let firstFriday = 5;
 for(let i = firstFriday; i <= 31; i += 7) {
-    console.log("сегодня пятница, ${i} -е число. необходимо подготовить отчет");
+    console.log(`сегодня пятница, ${i} -е число. необходимо подготовить отчет`);
 }
 
