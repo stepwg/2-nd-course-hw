@@ -179,4 +179,59 @@ a {
     padding-top: 20px;
 }
 
+.riddles {
+    background-image: url(../img/zagadki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.riddles_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.riddles_name {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.riddles_text {
+    color: #FFF;
+    font-family: 'Montserrat';
+    line-height: 2rem;
+    font-weight: 300;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer_box {
+    height: 80px;
+    background-color: #000915;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid;
+    border-color: #ffffff2f;
+    border-width: 1px;
+}
+
+.footer_text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #FFF;
+}
+
 @import 'mobileVers';
