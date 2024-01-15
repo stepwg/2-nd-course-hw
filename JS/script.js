@@ -1,4 +1,3 @@
-// дз 2.4
 
 for (let i = 0; i < 2; i++) {
     console.log("Привет");
