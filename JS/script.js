@@ -267,3 +267,89 @@ function filterPositive(array) {
     }
     return result;
 }
+
+
+// дз 2.7
+
+let string = "js";
+string = string.toUpperCase();
+console.log(string);
+
+
+
+function massive(array, str) {
+    return array.filter(item => item.toLowerCase().startsWith(str.toLowerCase()));
+}
+
+
+
+let number = 32.58884;
+console.log(Math.floor(number));
+console.log(Math.ceil(number));
+console.log(Math.round(number));
+
+
+
+let nums = [52, 53, 49, 77, 21, 32];
+console.log(Math.min(...nums));
+console.log(Math.max(...nums));
+
+
+
+function allRandom() {
+    console.log(Math.floor(Math.random() * 10) + 1);
+}
+
+
+
+function random(n) {
+    let result = [];
+    for (let i = 0; i < n/2; i++) {
+        result.push(Math.floor(Math.random() * n));
+    }
+    return result;
+}
+
+
+
+function random1(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+
+console.log(new Date());
+
+
+
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
+
+
+
+function getDates(date) {
+    let days = ["вс", "пн", "вт", "ср", "чт", "пт", "сб"];
+    let months =["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
+    return `Дата: ${date.getDate()} ${months[date.getMonth()]} ${date.get.FullYear()} - это ${days[date.getDay()]}\n Время: ${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`; 
+}
+console.log(getDates(new Date()));
+
+
+
+
+let fruits = ["Яблоко", "Груша", "Дыня", "Виноград", "Персик", "Апельсин", "Мандарин"];
+fruits = fruits.sort(() => Math.random() - 0.5);
+alert(fruits);
+
+let guess1 = prompt("Чему равнялся первый элемент массива?");
+let guessLast = prompt("Чему равнялся последний элемент массива?");
+
+if (guess1 === fruits[0] && guessLast === fruits[fruits.length - 1]) {
+    alert("Поздравляем, вы угадали оба слова.");
+}
+else if (guess1 === fruits[0] || guessLast === fruits[fruits.length - 1]) {
+    alert("Вы близки к победе");
+}
+else {
+    alert("Вы не угадали ни одного слова");
+}
