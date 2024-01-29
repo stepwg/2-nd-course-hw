@@ -154,6 +154,7 @@ const circle2 = {
 
 
 function getSeason() {
+    let month = prompt('enter ur number');
     if (month >= 3 && month <= 5) {
         return "Spring";
     } else if (month >= 6 && month <= 8) {
