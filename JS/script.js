@@ -156,15 +156,15 @@ const circle2 = {
 function getSeason() {
     let month = prompt('enter ur number');
     if (month >= 3 && month <= 5) {
-        return "Spring";
+        alert("Spring");
     } else if (month >= 6 && month <= 8) {
-        return "summer";
+        alert("summer");
     } else if (month >= 9 && month <= 11) {
-        return "automn";
+        alert("automn");
     } else if (month === 12 || month === 1 || month === 2) {
-        return "winter";
+        alert("winter");
     } else {
-        return "error";
+        alert("error");
     }
 }
 
@@ -336,20 +336,21 @@ console.log(getDates(new Date()));
 
 
 
+function game2() {
+    let fruits = ["Яблоко", "Груша", "Дыня", "Виноград", "Персик", "Апельсин", "Мандарин"];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+    alert(fruits);
 
-let fruits = ["Яблоко", "Груша", "Дыня", "Виноград", "Персик", "Апельсин", "Мандарин"];
-fruits = fruits.sort(() => Math.random() - 0.5);
-alert(fruits);
+    let guess1 = prompt("Чему равнялся первый элемент массива?");
+    let guessLast = prompt("Чему равнялся последний элемент массива?");
 
-let guess1 = prompt("Чему равнялся первый элемент массива?");
-let guessLast = prompt("Чему равнялся последний элемент массива?");
-
-if (guess1 === fruits[0] && guessLast === fruits[fruits.length - 1]) {
-    alert("Поздравляем, вы угадали оба слова.");
-}
-else if (guess1 === fruits[0] || guessLast === fruits[fruits.length - 1]) {
-    alert("Вы близки к победе");
-}
-else {
-    alert("Вы не угадали ни одного слова");
+    if (guess1 === fruits[0] && guessLast === fruits[fruits.length - 1]) {
+        alert("Поздравляем, вы угадали оба слова.");
+    }
+    else if (guess1 === fruits[0] || guessLast === fruits[fruits.length - 1]) {
+        alert("Вы близки к победе");
+    }
+    else {
+        alert("Вы не угадали ни одного слова");
+    }
 }
