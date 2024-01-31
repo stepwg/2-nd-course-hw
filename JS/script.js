@@ -354,3 +354,85 @@ function game2() {
         alert("Вы не угадали ни одного слова");
     }
 }
+
+
+// дз 2.8
+
+const people = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+console.log(people.sort((a, b) => a.age - b.age));
+
+
+
+
+
+const people1 = [
+    {name: 'Глеб', gender: 'male'},
+    {name: 'Анна', gender: 'female'},
+    {name: 'Олег', gender: 'male'},
+    {name: 'Оксана', gender: 'female'}
+ ];
+
+function isPositive(el) {
+    return el > 0;
+}
+function isMale(el) {
+    return el.gender === "male";
+}
+function filter(arr, callback) {
+    const output = [];
+    arr.map(el => {
+        if (callback(el)) {
+            output.push(el);
+        }
+    })
+    return output;
+}
+console.log(filter([3, -4, 1, 9], isPositive));
+console.log(filter(people1, isMale));
+
+
+
+
+function nowDate() {
+    let timerId = setInterval(() => {
+        const date = new Date();
+        console.log(date);
+    }, 30000)
+
+    setTimeout(() => {
+        clearInterval(timerId);
+        console.log("30 sec is done");
+    }, 30000);
+}
+nowDate()
+
+
+
+function delayForSecond(callback) {
+    setTimeout(() => callback(), 1000);
+}
+delayForSecond(function() {
+    console.log("Привет, Глеб");
+})
+
+
+
+
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+		if(cb) { 	cb(); }
+
+    }, 1000)
+}
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi('Глеб'))
