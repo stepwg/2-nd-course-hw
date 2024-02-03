@@ -402,7 +402,7 @@ function nowDate() {
     let timerId = setInterval(() => {
         const date = new Date();
         console.log(date);
-    }, 30000)
+    }, 3000)
 
     setTimeout(() => {
         clearInterval(timerId);
@@ -413,10 +413,10 @@ nowDate()
 
 
 
-function delayForSecond(callback) {
+function delay(callback) {
     setTimeout(() => callback(), 1000);
 }
-delayForSecond(function() {
+delay(function() {
     console.log("Привет, Глеб");
 })
 
